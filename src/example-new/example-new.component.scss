@@ -1,0 +1,19 @@
+:host {
+  padding: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: grid;
+  gap: 8px;
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  footer {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+}
