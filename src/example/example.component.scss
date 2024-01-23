@@ -4,14 +4,18 @@
   border-radius: 4px;
 }
 
-.header {
+header {
   margin-bottom: 8px;
 }
 
-.main{
+main{
   .content{
     margin-bottom: 8px;
   }
+}
+
+footer {
+  margin-top: 8px;
 }
 
 .title {
@@ -26,6 +30,3 @@
   clear: both;
 }
 
-.footer {
-  margin-top: 8px;
-}
