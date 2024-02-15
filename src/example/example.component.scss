@@ -1,25 +1,16 @@
-:host {
+.modalContent {
   padding: 16px;
   border: 1px solid #000;
   border-radius: 4px;
 }
 
-header {
+.header {
   margin-bottom: 8px;
 }
 
-main{
-  .content{
-    margin-bottom: 8px;
-  }
-}
-
-footer {
-  margin-top: 8px;
-}
-
 .title {
-  font-size: 28px;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .floatRight {
@@ -30,3 +21,7 @@ footer {
   clear: both;
 }
 
+input {
+  display: block;
+  width: 100%;
+}
