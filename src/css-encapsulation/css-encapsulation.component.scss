@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  app-emulated button {
+    width: 400px;
+  }
+
+  app-emulated ::ng-deep button {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

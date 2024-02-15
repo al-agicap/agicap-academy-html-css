@@ -1,0 +1,15 @@
+:host {
+  margin-left: 16px;
+}
+
+flipper-card {
+  border-color: var(--flipper-caution-900);
+
+  &-header {
+    background: red;
+  }
+}
+
+button {
+  background: var(--flipper-caution-900) !important;
+}

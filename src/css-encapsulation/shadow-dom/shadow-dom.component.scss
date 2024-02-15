@@ -1,0 +1,3 @@
+@use '@agicap/flipper' as flipper;
+
+@include flipper.flipper_admin_theme(false, ':host');
