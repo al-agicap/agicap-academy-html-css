@@ -1,17 +1,17 @@
-import { Component, ViewEncapsulation } from "@angular/core";
-import { ExampleComponent } from "../example/example.component";
-import { ExampleNewComponent } from "../example-new/example-new.component";
-import { ExampleWithFlipperComponent } from "../example-with-flipper/example-with-flipper.component";
-import { MatExpansionModule } from "@angular/material/expansion";
-import { MatTabsModule } from "@angular/material/tabs";
+import {Component, ViewEncapsulation} from "@angular/core";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatTabsModule} from "@angular/material/tabs";
+import {ExampleDirectivesComponent} from "../example-directives/example-directives.component";
+import {FlipperComponent} from "../flipper/flipper.component";
+import {HtmlCssBestPraticesComponent} from "../html-css-best-pratices/html-css-best-pratices.component";
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  standalone: true,
-  encapsulation: ViewEncapsulation.None,
-  styleUrls: ["./app.component.scss"],
-  imports: [ExampleComponent, ExampleNewComponent, ExampleWithFlipperComponent, MatExpansionModule, MatTabsModule]
+    selector: "app-root",
+    templateUrl: "./app.component.html",
+    standalone: true,
+    encapsulation: ViewEncapsulation.None,
+    styleUrls: ["./app.component.scss"],
+    imports: [MatExpansionModule, MatTabsModule, ExampleDirectivesComponent, FlipperComponent, HtmlCssBestPraticesComponent]
 })
 export class AppComponent {
 
