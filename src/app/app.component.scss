@@ -1,7 +1,9 @@
 @use '@agicap/flipper' as flipper;
+
 @include flipper.flipper_default_theme(false, ':root');
 
-:host{
+
+app-root {
   display: grid;
   gap: 2rem;
   padding: 2rem;
