@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding: 1rem 0;
+}
+
+.wrapper {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 400px auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}

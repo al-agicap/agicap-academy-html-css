@@ -1,0 +1,35 @@
+<flipper-card>
+  <flipper-card-header>
+    <flipper-card-title>New transaction
+    </flipper-card-title>
+  </flipper-card-header>
+
+  <flipper-card-content>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Billing date</mat-label>
+      <input [matDatepicker]="picker" [ngModel]="billingDate" matInput placeholder="Billing date">
+      <mat-datepicker-toggle [for]="picker" matIconSuffix>
+        <mat-icon matDatepickerToggleIcon svgIcon="calendar"></mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Amount</mat-label>
+      <input [ngModel]="transactionAmount" matInput
+             placeholder="Amount"
+             type="number">
+      <span matTextSuffix>€</span>
+    </mat-form-field>
+
+    <footer class="flp-mt-16">
+      <button color="accent" mat-stroked-button>
+        Cancel
+      </button>
+      <button (click)="validate.emit()" color="primary" mat-raised-button>
+        Validate
+      </button>
+    </footer>
+  </flipper-card-content>
+</flipper-card>

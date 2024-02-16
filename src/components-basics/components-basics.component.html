@@ -1,1 +1,20 @@
-<p>components-basics works!</p>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>Inputs and outputs</mat-expansion-panel-header>
+    <div class="wrapper">
+      <app-transaction-form (validate)="validate()" [billingDate]="billingDate"
+                            transactionAmount="{{transactionAmount}}"></app-transaction-form>
+      <section>
+        <pre class="language-html"><code
+        >{{ componentTemplate }}</code></pre>
+      </section>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>Content projection</mat-expansion-panel-header>
+
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+<mat-snack-bar-container></mat-snack-bar-container>

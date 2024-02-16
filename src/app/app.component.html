@@ -1,33 +1,33 @@
-<mat-tab-group [selectedIndex]="selectedIndex" (selectedIndexChange)="onTabChange($event)">
-    <mat-tab label="HTML best practices">
-        <ng-template matTabContent>
-            <app-html-css-best-pratices></app-html-css-best-pratices>
-        </ng-template>
-    </mat-tab>
-    <mat-tab label="Flipper">
-        <ng-template matTabContent>
-            <app-flipper></app-flipper>
-        </ng-template>
-    </mat-tab>
-    <mat-tab label="Components basics">
-        <ng-template matTabContent>
-            <app-components-basics></app-components-basics>
-        </ng-template>
-    </mat-tab>
-    <mat-tab label="CSS encapsulation">
-        <ng-template matTabContent>
-            <app-css-encapsulation></app-css-encapsulation>
-        </ng-template>
-    </mat-tab>
-    <mat-tab label="Directives Angular">
-        <ng-template matTabContent>
-            <app-example-directives></app-example-directives>
-        </ng-template>
-    </mat-tab>
-    <mat-tab label="Flex & CSS Grid">
-        <ng-template matTabContent>
-            <app-flex-grid></app-flex-grid>
-        </ng-template>
-    </mat-tab>
+<mat-tab-group (selectedIndexChange)="onTabChange($event)" [selectedIndex]="selectedIndex">
+  <mat-tab label="HTML best practices">
+    <ng-template matTabContent>
+      <app-html-css-best-pratices></app-html-css-best-pratices>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Flipper">
+    <ng-template matTabContent>
+      <app-flipper></app-flipper>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Components basics">
+    <ng-template matTabContent>
+      <app-components-basics></app-components-basics>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="CSS encapsulation">
+    <ng-template matTabContent>
+      <app-css-encapsulation></app-css-encapsulation>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Directives Angular">
+    <ng-template matTabContent>
+      <app-example-directives></app-example-directives>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Flex & CSS Grid">
+    <ng-template matTabContent>
+      <app-flex-grid></app-flex-grid>
+    </ng-template>
+  </mat-tab>
 </mat-tab-group>
 

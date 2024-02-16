@@ -3,3 +3,8 @@
 @include flipper.flipper_default_theme(false, ':root');
 @import './prismjs/themes/prism-okaidia';
 
+
+mat-expansion-panel-header {
+  padding: 1rem !important;
+  border: 1px solid var(--flipper-grey-200) !important;
+}
