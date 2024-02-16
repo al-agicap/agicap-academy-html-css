@@ -31,14 +31,16 @@
 
 - vocabulaire directives & composants
 - ngIf, ngIf; else;
+    - ng-template
+    - ng-container
 - ngFor
 - ngSwitch
-- ng-container
+- {{}}
 
 ### content projection
 
-- ng-template
 - ng-content
+- ng-content select
 
 ## grid & flex
 
@@ -52,12 +54,16 @@
     - gap
     - align-items, justify-content
 
-## liaisons bidirectionnelles
+## Inputs & Outputs
 
-- [()] vs [] vs () vs {{}}
+- [()] vs [] vs ()
 - Inputs & Outputs
 
 ## pipes
+
+- date
+- currency
+- custom
 
 ## internationalisation
 
