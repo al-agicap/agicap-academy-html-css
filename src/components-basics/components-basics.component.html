@@ -1,19 +1,31 @@
 <mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>Inputs and outputs</mat-expansion-panel-header>
-    <div class="wrapper">
-      <app-transaction-form (validate)="validate()" [billingDate]="billingDate"
-                            transactionAmount="{{transactionAmount}}"></app-transaction-form>
-      <section>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>Inputs and outputs</mat-expansion-panel-header>
+        <div class="wrapper">
+            <section>
         <pre class="language-html"><code
         >{{ componentTemplate }}</code></pre>
-      </section>
-    </div>
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>Content projection</mat-expansion-panel-header>
+            </section>
+            
+            <app-transaction-form (validate)="validate()" [billingDate]="billingDate"
+                                  transactionAmount="{{transactionAmount}}"></app-transaction-form>
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>Content projection</mat-expansion-panel-header>
 
-  </mat-expansion-panel>
+        <div class="wrapper">
+            <section>
+        <pre class="language-html"><code
+        >{{ contentProjectionTemplate }}</code></pre>
+            </section>
+
+            <app-my-card>
+                <div title>Title</div>
+                <div class="content">Content</div>
+            </app-my-card>
+        </div>
+    </mat-expansion-panel>
 </mat-accordion>
 
 
