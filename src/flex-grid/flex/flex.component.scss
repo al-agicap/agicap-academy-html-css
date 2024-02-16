@@ -1,0 +1,32 @@
+.inputs {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem 0;
+
+  > * {
+    width: 180px;
+  }
+}
+
+flipper-card-content {
+
+  display: grid;
+  gap: 1rem;
+
+  footer {
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      height: auto;
+    }
+
+    &.flex-column {
+      flex-direction: column;
+    }
+  }
+
+}

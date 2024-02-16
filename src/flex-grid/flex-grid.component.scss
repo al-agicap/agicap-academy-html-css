@@ -1,0 +1,26 @@
+:host {
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}

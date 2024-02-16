@@ -1,0 +1,53 @@
+<div class="inputs">
+  <mat-form-field appearance="outline">
+    <mat-label>justify-content</mat-label>
+    <mat-select [(ngModel)]="justifyContent">
+      <mat-option value="flex-start">flex-start</mat-option>
+      <mat-option value="center">center</mat-option>
+      <mat-option value="flex-end">flex-end</mat-option>
+      <mat-option value="space-around">space-around</mat-option>
+      <mat-option value="space-between">space-between</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>align-items</mat-label>
+    <mat-select [(ngModel)]="alignItems">
+      <mat-option value="flex-start">flex-start</mat-option>
+      <mat-option value="center">center</mat-option>
+      <mat-option value="flex-end">flex-end</mat-option>
+      <mat-option value="stretch">stretch</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>gap</mat-label>
+    <input matInput type="number" [(ngModel)]="gap"  >
+    <span matTextSuffix>rem</span>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>grid-template-columns</mat-label>
+    <input matInput [(ngModel)]="gridTemplateColumns"  >
+  </mat-form-field>
+</div>
+<flipper-card>
+  <flipper-card-content style="justify-content: {{justifyContent}}; align-items: {{alignItems}}; gap: {{gap}}rem; grid-template-columns: {{ gridTemplateColumns }}">
+    <mat-form-field appearance="outline">
+      <mat-label>transaction name</mat-label>
+      <input matInput value="Graal quest payment #725"  >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Amount</mat-label>
+      <input matInput   >
+      <span matTextSuffix>sovereigns</span>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Billing date</mat-label>
+      <input matInput value="07/02/1457"  >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Beneficiary</mat-label>
+      <mat-select value="1">
+        <mat-option value="1">Provençal le gaulois</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </flipper-card-content>
+</flipper-card>
