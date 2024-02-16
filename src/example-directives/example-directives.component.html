@@ -1,2 +1,168 @@
-<pre class="language-html"><code
->{{ code }}</code></pre>
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgIf basic
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ basicNgIfTemplate }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <button mat-stroked-button color="primary" (click)="show = !show">
+                    Toggle
+                </button>
+                <button mat-raised-button color="primary" *ngIf="show">
+                    Validate
+                </button>
+            </section>
+        </div>
+
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgIfElse
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ ngIfElse }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <button mat-stroked-button color="primary" (click)="show = !show">
+                    Toggle
+                </button>
+
+                <button mat-raised-button color="primary" *ngIf="show; else cancelTemplate">
+                    Validate
+                </button>
+                <ng-template #cancelTemplate>
+                    <button mat-stroked-button>Cancel</button>
+                </ng-template>
+            </section>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgContainer
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ withNgContainer }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <button mat-stroked-button color="primary" (click)="show = !show">
+                    Toggle
+                </button>
+
+                <div *ngIf="show" style="border: 1px solid grey;padding: 1rem">
+                    <button mat-raised-button color="primary">
+                        Validate
+                    </button>
+                    <button mat-stroked-button>Cancel</button>
+                </div>
+
+                <ng-container *ngIf="!show">
+                    <button mat-raised-button color="primary">
+                        Validate
+                    </button>
+                    <button mat-stroked-button>Cancel</button>
+                </ng-container>
+            </section>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgFor
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ ngForTemplate }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <mat-list role="list">
+                    <ng-container
+                            *ngFor="let label of ['Item 1', 'Item 2', 'Item 3']">
+                        <mat-list-item>{{ label }}</mat-list-item>
+                    </ng-container>
+                </mat-list>
+            </section>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgForAdvanced
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ ngForTemplateAdvanced }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <mat-list role="list">
+                    <ng-container
+                            *ngFor="let label of ['Validate', 'Cancel', 'Submit']; let i = index; let isLast = last">
+                        <mat-list-item>Item {{ i }}</mat-list-item>
+                        <mat-divider *ngIf="!isLast"></mat-divider>
+                    </ng-container>
+                </mat-list>
+            </section>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NgClass
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="panel-content">
+            <section>
+                <pre class="language-html"><code
+                >{{ ngClassTemplate }}</code></pre>
+            </section>
+
+            <section class="sandbox">
+                <button mat-stroked-button (click)="marginEnabled = !marginEnabled">Toggle class</button>
+
+                <flipper-card [class.flp-mt-16]="marginEnabled">
+                    <flipper-card-header>
+                        <flipper-card-title>Card title</flipper-card-title>
+                    </flipper-card-header>
+                    Card content
+                </flipper-card>
+            </section>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+
+
+
+
+

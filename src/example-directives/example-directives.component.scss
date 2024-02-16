@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  padding: 1rem;
+}
+
+mat-expansion-panel-header {
+  padding: 1rem;
+  border: 1px solid var(--flipper-grey-200);
+}
+
+.panel-content {
+  display: grid;
+  grid-template-columns: auto 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section {
+  min-height: 168px;
+}
+
+.sandbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -1,19 +1,33 @@
 <mat-tab-group [selectedIndex]="selectedIndex" (selectedIndexChange)="onTabChange($event)">
     <mat-tab label="HTML best practices">
-        <app-html-css-best-pratices></app-html-css-best-pratices>
+        <ng-template matTabContent>
+            <app-html-css-best-pratices></app-html-css-best-pratices>
+        </ng-template>
     </mat-tab>
     <mat-tab label="Flipper">
-        <app-flipper></app-flipper>
+        <ng-template matTabContent>
+            <app-flipper></app-flipper>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="Components basics">
+        <ng-template matTabContent>
+            <app-components-basics></app-components-basics>
+        </ng-template>
     </mat-tab>
     <mat-tab label="CSS encapsulation">
-        <app-css-encapsulation></app-css-encapsulation>
+        <ng-template matTabContent>
+            <app-css-encapsulation></app-css-encapsulation>
+        </ng-template>
     </mat-tab>
     <mat-tab label="Directives Angular">
-        <app-example-directives></app-example-directives>
+        <ng-template matTabContent>
+            <app-example-directives></app-example-directives>
+        </ng-template>
     </mat-tab>
     <mat-tab label="Flex & CSS Grid">
-        <app-flex-grid></app-flex-grid>
+        <ng-template matTabContent>
+            <app-flex-grid></app-flex-grid>
+        </ng-template>
     </mat-tab>
-
 </mat-tab-group>
 

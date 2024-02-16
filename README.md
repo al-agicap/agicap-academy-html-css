@@ -37,10 +37,14 @@
 - ngSwitch
 - {{}}
 
-### content projection
+## Composants
 
-- ng-content
-- ng-content select
+- Inputs & Outputs
+  [()] vs [] vs ()
+
+- content projection
+    - ng-content
+    - ng-content select
 
 ## grid & flex
 
