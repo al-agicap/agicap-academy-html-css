@@ -11,8 +11,10 @@ import {MatButtonModule} from "@angular/material/button";
 })
 export class ToggleButtonComponent {
     @Input() toggle: boolean = false;
+
     @Output() toggleChange = new EventEmitter<boolean>();
-    label: string = 'Toggle';
+    @Input() label: string = 'Toggle';
+    counter: number = 0;
 
     toggleValue(event?: Event): void {
         this.toggle = !this.toggle;
@@ -20,6 +22,7 @@ export class ToggleButtonComponent {
     }
 
     labelToDisplay() {
-        return "";
+        this.counter++;
+        return "Mon label " + this.label;
     }
 }

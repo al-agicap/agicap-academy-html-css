@@ -1,146 +1,146 @@
 <app-component-sandbox></app-component-sandbox>
 
-<mat-accordion>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Text interpolation</mat-expansion-panel-header>
-        <div class="wrapper">
-            <section>
-        <pre class="language-html"><code
-        >{{ interpolationTemplate }}</code></pre>
-            </section>
+<!--<mat-accordion>-->
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Text interpolation</mat-expansion-panel-header>-->
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--        <pre class="language-html"><code-->
+<!--        >{{ interpolationTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <h1>{{ title }}</h1>
+<!--            <h1>{{ title }}</h1>-->
 
-        </div>
-    </mat-expansion-panel>
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Text interpolation with function</mat-expansion-panel-header>
-        <div class="wrapper">
-            <section>
-        <pre class="language-html"><code
-        >{{ interpolationWithFunctionTemplate }}</code></pre>
-            </section>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Text interpolation with function</mat-expansion-panel-header>-->
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--        <pre class="language-html"><code-->
+<!--        >{{ interpolationWithFunctionTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <div>
-                <h1>{{ textToDisplay() }}</h1>
-                <p>{{ callCount }}</p>
-            </div>
+<!--            <div>-->
+<!--                <h1>{{ textToDisplay() }}</h1>-->
+<!--                <p>{{ callCount }}</p>-->
+<!--            </div>-->
 
-            <section>
-        <pre class="language-typescript"><code
-        >{{ interpolationWithFunctionTypescript }}</code></pre>
-            </section>
-        </div>
-    </mat-expansion-panel>
+<!--            <section>-->
+<!--        <pre class="language-typescript"><code-->
+<!--        >{{ interpolationWithFunctionTypescript }}</code></pre>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Property binding</mat-expansion-panel-header>
-        <div class="wrapper">
-            <section>
-        <pre class="language-html"><code
-        >{{ propertyBindingTemplate }}</code></pre>
-            </section>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Property binding</mat-expansion-panel-header>-->
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--        <pre class="language-html"><code-->
+<!--        >{{ propertyBindingTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <div>
-                <button color="primary" [disabled]="true">Disabled button</button>
-                <button mat-raised-button color="primary">Primary button</button>
-                <button mat-raised-button [color]="myColor">Dynamic color button</button>
-            </div>
-        </div>
-    </mat-expansion-panel>
+<!--            <div>-->
+<!--                <button color="primary" [disabled]="true">Disabled button</button>-->
+<!--                <button mat-raised-button color="primary">Primary button</button>-->
+<!--                <button mat-raised-button [color]="myColor">Dynamic color button</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Event binding</mat-expansion-panel-header>
-        <div class="wrapper">
-            <section>
-                <pre class="language-html"><code
-                >{{ eventBindingTemplate }}</code></pre>
-            </section>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Event binding</mat-expansion-panel-header>-->
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--                <pre class="language-html"><code-->
+<!--                >{{ eventBindingTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <div>
-                <button (click)="show('click')" (mouseenter)="show('mouseenter')">My button</button>
-                <app-transaction-form (validate)="show('validate')"></app-transaction-form>
-            </div>
-        </div>
-    </mat-expansion-panel>
+<!--            <div>-->
+<!--                <button (click)="show('click')" (mouseenter)="show('mouseenter')">My button</button>-->
+<!--                <app-transaction-form (validate)="show('validate')"></app-transaction-form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Two way binding</mat-expansion-panel-header>
-        <div class="wrapper">
-            <section>
-                <pre class="language-html"><code
-                >{{ twoWayBindingTemplate }}</code></pre>
-            </section>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Two way binding</mat-expansion-panel-header>-->
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--                <pre class="language-html"><code-->
+<!--                >{{ twoWayBindingTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <div>
-                <app-toggle-button [(toggle)]="marginEnabled"></app-toggle-button>
-                <p>{{ marginEnabled }}</p>
-            </div>
-        </div>
-    </mat-expansion-panel>
+<!--            <div>-->
+<!--                <app-toggle-button [(toggle)]="marginEnabled"></app-toggle-button>-->
+<!--                <p>{{ marginEnabled }}</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Attribute binding
-            </mat-panel-title>
-        </mat-expansion-panel-header>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>-->
+<!--            <mat-panel-title>-->
+<!--                Attribute binding-->
+<!--            </mat-panel-title>-->
+<!--        </mat-expansion-panel-header>-->
 
-        <div class="wrapper">
-            <section>
-                <pre class="language-html"><code
-                >{{ attributeBindingTemplate }}</code></pre>
-            </section>
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--                <pre class="language-html"><code-->
+<!--                >{{ attributeBindingTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <section class="sandbox">
-                <button mat-stroked-button data-test="validate-button">Validate</button>
-                <button mat-stroked-button [attr.data-test]="dateTest">Validate</button>
-            </section>
-        </div>
-    </mat-expansion-panel>
+<!--            <section class="sandbox">-->
+<!--                <button mat-stroked-button data-test="validate-button">Validate</button>-->
+<!--                <button mat-stroked-button [attr.data-test]="dateTest">Validate</button>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Class binding
-            </mat-panel-title>
-        </mat-expansion-panel-header>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>-->
+<!--            <mat-panel-title>-->
+<!--                Class binding-->
+<!--            </mat-panel-title>-->
+<!--        </mat-expansion-panel-header>-->
 
-        <div class="wrapper">
-            <section>
-                <pre class="language-html"><code
-                >{{ ngClassTemplate }}</code></pre>
-            </section>
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--                <pre class="language-html"><code-->
+<!--                >{{ ngClassTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <section class="sandbox">
-                <button mat-stroked-button (click)="marginEnabled = !marginEnabled">Toggle class</button>
+<!--            <section class="sandbox">-->
+<!--                <button mat-stroked-button (click)="marginEnabled = !marginEnabled">Toggle class</button>-->
 
-                <flipper-card [class.flp-mt-16]="marginEnabled">
-                    <flipper-card-header>
-                        <flipper-card-title>Card title</flipper-card-title>
-                    </flipper-card-header>
-                    Card content
-                </flipper-card>
-            </section>
-        </div>
-    </mat-expansion-panel>
+<!--                <flipper-card [class.flp-mt-16]="marginEnabled">-->
+<!--                    <flipper-card-header>-->
+<!--                        <flipper-card-title>Card title</flipper-card-title>-->
+<!--                    </flipper-card-header>-->
+<!--                    Card content-->
+<!--                </flipper-card>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>Content projection</mat-expansion-panel-header>
+<!--    <mat-expansion-panel>-->
+<!--        <mat-expansion-panel-header>Content projection</mat-expansion-panel-header>-->
 
-        <div class="wrapper">
-            <section>
-        <pre class="language-html"><code
-        >{{ contentProjectionTemplate }}</code></pre>
-            </section>
+<!--        <div class="wrapper">-->
+<!--            <section>-->
+<!--        <pre class="language-html"><code-->
+<!--        >{{ contentProjectionTemplate }}</code></pre>-->
+<!--            </section>-->
 
-            <app-my-card>
-                <div class="content">Content</div>
-            </app-my-card>
-        </div>
-    </mat-expansion-panel>
-</mat-accordion>
+<!--            <app-my-card>-->
+<!--                <div class="content">Content</div>-->
+<!--            </app-my-card>-->
+<!--        </div>-->
+<!--    </mat-expansion-panel>-->
+<!--</mat-accordion>-->
 
 
 <mat-snack-bar-container></mat-snack-bar-container>
