@@ -80,18 +80,6 @@ export class ExampleDirectivesComponent implements AfterViewChecked {
         </ng-container>
     </mat-list>
 `
-    marginEnabled = true;
-    ngClassTemplate = `
-   <button mat-stroked-button (click)="marginEnabled = !marginEnabled">Toggle class</button>
-
-    <flipper-card [class.flp-mt-16]="marginEnabled">
-        <flipper-card-header>
-            <flipper-card-title>Card title</flipper-card-title>
-        </flipper-card-header>
-        Card content
-    </flipper-card>
-`
-
 
     constructor(private highlightService: HighlightService) {
     }

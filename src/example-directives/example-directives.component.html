@@ -135,31 +135,6 @@
         </div>
     </mat-expansion-panel>
 
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                NgClass
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-
-        <div class="panel-content">
-            <section>
-                <pre class="language-html"><code
-                >{{ ngClassTemplate }}</code></pre>
-            </section>
-
-            <section class="sandbox">
-                <button mat-stroked-button (click)="marginEnabled = !marginEnabled">Toggle class</button>
-
-                <flipper-card [class.flp-mt-16]="marginEnabled">
-                    <flipper-card-header>
-                        <flipper-card-title>Card title</flipper-card-title>
-                    </flipper-card-header>
-                    Card content
-                </flipper-card>
-            </section>
-        </div>
-    </mat-expansion-panel>
 </mat-accordion>
 
 
